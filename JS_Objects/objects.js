@@ -20,10 +20,15 @@ console.log(`Hello, my name is ${myObj.name}`);//  String interpoletion
 console.log(myObj.name);//gives the name of myObj
 console.log(myObj1["name"]);//gives the name of myObj1
 
-Object.freeze(myObj);//freezes the object can't make any changes there
+//Object.freeze(myObj);//freezes the object can't make any changes there
 
 myObj.City = "Bangalore";
 console.log(myObj);
+
+myObj.greeting = function() {
+    console.log(`Hello, ${this.name} nice to  meet you`);
+}
+console.log(myObj.greeting());
 
 
 console.log(myObj1);
