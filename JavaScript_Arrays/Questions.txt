@@ -1,0 +1,10 @@
+1. What are arrays in javascript?
+2. Are arrays resizable in javascript?
+3. Can we store multiple data types in one single array in javascript?
+4. How can I create arrays of strict data type in javascript?
+5. What is shallow copy and deep copy?
+6. Does arrays create a shallow copy or deep copy?
+7. What are the array methods in javascript?
+8. What is the difference between slice and splice?
+9. Why we can't merge two arrays using push() method?
+10. What is the difference between spread and concat operator?
