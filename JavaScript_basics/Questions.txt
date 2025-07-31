@@ -1,0 +1,27 @@
+VARIABLES AND DATA TYPES:
+
+1.  What are the data types in js?
+2. What are the different ways to declare variables and constants and why var is not be used nowadays?
+3. What is the data type of null and undefined?
+4. What is the use of typeof operator?
+5. Primitive and non primitive data types.
+6. Is javascript a static or dynamically typed language?
+7. Difference between == and ===.
+8. Explain Symbol and BigInt
+9. Hoisting behaviour of var const and let
+10. Temporal dead zone of let and const
+11. Rules for reassignment and redeclaration
+12. Mutability of primitive and objects in js.
+13. Explain the cases of typeof(NaN===Number) and typeof(null === "object)
+14. Explain global local and functional scope
+
+
+STACK AND HEAP MEMORY:
+1. What is call by value and call by reference in js?
+2. Differentiate between stack and heap memory.
+3. What exactly is stored in stack memory and what exactly is stored in heap memory?
+4. How are you going to access the elements stored in stack memory and how are you going to access the elements stored in heap memory?
+5. How does garbage collection works in javascript?
+6. Mutability of values stored in stack and values stored in heap
+7. Memory leaks in javascript
+
