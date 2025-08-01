@@ -1,0 +1,13 @@
+/* JavaScript Execution Context
+
+Global Execution Context :
+{} -> is accessed using this keyword
+
+# Global execution context varies from node.js environment to browser environment
+
+# browser environment : When we run a simple this keyword on browser we will get the basic window element
+# node.js environment : When we run a simple this keyword on node.js environment we will get the basic object element
+# all of this runs in a single thread
+
+----------------------------------------------------------------------------------------------------------------------
+#Functinal execution context
