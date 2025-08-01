@@ -21,3 +21,30 @@ if(true) {
 }
 
 console.log(a);
+
+//function declaration
+abc();//works only for normal function declaration
+function abc() {
+    console.log("Hi ");
+    
+}
+
+
+const greet3 = function def() {
+    console.log("I am anoop");
+    
+}
+greet();//first have to declare and initialize the variable and then have to call it or else will get a error.
+
+//nested functions rule
+greet("Meg");
+function greet(username) {
+        console.log(`Hi ${username}`);
+        function greet1(website) {
+            console.log(`This is your ${website}`);
+            
+        }
+        // console.log(website) //inaccessible 
+        greet1("youtube");
+        
+}
