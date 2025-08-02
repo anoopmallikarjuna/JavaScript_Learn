@@ -1,0 +1,37 @@
+document.getElementByID : fetches an element by its ID
+
+can add .id || .className to get the the id or className of that particular element.
+
+can join .getAttribute(attribute name) to fetch the attribute value of that particular attribute
+
+can join .setAttribute(attribute name, new attribute name) to set the attribute name to a new one
+
+can store the the result of getElementByID in a variable 
+
+can use that variable to style that particular element i.e. variable.style.backgroundColor = 'green'
+-----------------------------------------------------------------------------------------
+
+innerText, innerContent, innerHTML
+
+innerText returns the text which is being displayed as the result of the html code 
+innerContent returns the entire value which includes the manipulated text using css
+innerHTML returns the entire html of that particular element
+
+------------------------------------------------------------------------------------------
+QUERY SELECTORS:
+
+1. document.querySelector(tagName) returns the fist element matching the tagName
+
+If we want to use query selectors for a element using its id then we have to use # notation and 
+if we want to use query selectors for a element using its class then we have to use . notation
+
+2. document.querySelectorAll(tagName) returns a NodeList of all the elements matching with that tagName
+
+We can only use forEach for nodelist for iterating purpose and if we want to use other array functions
+then we have to convert the nodeList into a array using Array.from(nodeList name)
+
+If we want to change the individual elements then we can do it by using nodeList[index number] and perform tasks
+
+------------------------------------------------------------------------------------------
+.getElementsByClassName returns an HTMLCollection which cannot be use to iterate over the structure so we have to convert into an array in the above shown manner 
+ and then we have to do the required operations...
