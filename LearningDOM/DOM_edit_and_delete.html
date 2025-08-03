@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM final</title>
+</head>
+<body>
+    <ul class="language">
+        
+        
+    </ul>
+
+    
+    
+</body>
+<script>
+    function addLang(langName) {
+        const language = document.createElement('li');
+        language.setAttribute('class', 'IndividualList')
+        console.log(language);
+        
+        language.innerHTML = langName;
+        document.querySelector('.language').appendChild(language);
+    }
+
+    addLang("Python");
+    addLang("Ruby on Rails");
+    addLang("JavaScript");
+    addLang("Java");
+    addLang("GoLang");
+
+    console.log(document.querySelector('.IndividualList').parentNode)
+
+    function replace(newLi, n) {
+        const ul = document.querySelector('.language');
+        const items = ul.querySelectorAll('li');
+
+        if (items.length >= n) {
+            const secElem = items[n - 1]; // 0-indexed
+            const repText = document.createElement('li');
+            repText.textContent = newLi;
+            secElem.replaceWith(repText);
+        } else {
+            alert("First enter the language");
+        }
+    }
+
+    replace("C++", 6);
+
+</script>
+</html>

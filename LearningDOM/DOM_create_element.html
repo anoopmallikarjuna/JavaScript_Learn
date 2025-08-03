@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My WebPage
+        </title>
+    </head>
+
+    <body style="background-color: #212121; color: #fff;">
+        
+    </body>
+
+    <script>
+        const element = document.createElement('div')
+        console.log(element);
+        element.className = "myDiv"
+        element.id = Math.floor(Math.random() * 10 +1)
+        element.setAttribute('title', 'myTitle')
+        element.style.backgroundColor = "green"
+        element.style.padding = '12px'
+
+        const abc = document.createTextNode('Hi this is Anoop')
+        element.appendChild(abc)
+
+        document.body.appendChild(element)
+    </script>
+</html>

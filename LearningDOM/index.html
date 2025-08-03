@@ -2,20 +2,37 @@
 <html>
     <head>
         <title>
-            Welcome to my webpage
+            My WebPage
         </title>
-        <style>
-            .bg-black{
-                background-color: black;
-                color: #fff;
-            }
-        </style>
     </head>
 
-    <body class="bg-black">
-        <div >
-                <h1 id ="title" class="heading">DOM Learning</h1>
-                <p>Learning dom here</p>
+    <body style="background-color: #212121; color: #fff;">
+        <div class="parent">
+            <div class="day">Monday</div>
+            <div class="day">Tuesday</div>
+            <div class="day">Wednesday</div>
+            <div class="day">Thursday</div>
         </div>
+        
     </body>
+
+    <script>
+      const parent = document.querySelector('.parent')
+    //   console.log(parent);
+    //   console.log(parent.children);
+    //   console.log(parent.children[1].innerHTML);
+      
+      for (let index = 0; index < parent.children.length; index++) {
+        console.log(parent.children[index].innerHTML);
+
+        parent.children[1].style.color = 'orange'
+        console.log(parent.lastElementChild);
+        
+        console.log(parent.childNodes)
+        
+        
+      }
+      
+      
+    </script>
 </html>
